@@ -1,6 +1,6 @@
 FROM openjdk:17-slim
 
-ENV MC_VERSION=latest
+ENV MC_VERSION=1.17.1
 ENV SRV_RAM=2G
 
 WORKDIR /usr/src/papermc
