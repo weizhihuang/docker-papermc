@@ -1,6 +1,6 @@
 FROM openjdk:17-slim
 
-ENV MC_VERSION=1.17.1
+ENV MC_VERSION=latest
 ENV SRV_RAM=2G
 
 WORKDIR /usr/src/papermc
@@ -16,6 +16,6 @@ RUN chown -R papermc:papermc .
 USER papermc
 
 EXPOSE 25565/tcp
-ENTRYPOINT [ "sh", "-c", "/tmp/get-papermc.sh && /tmp/start.sh" ]
+ENTRYPOINT [ "sh", "-c", "/tmp/get-papermc.sh && echo eula=true > eula.txt && /tmp/start.sh" ]
 
 VOLUME [ "/usr/src/papermc" ]

@@ -1,5 +1,4 @@
 #!/bin/sh
-echo eula=true > eula.txt
 
 if [ -z $SRV_RAM ]
 then
