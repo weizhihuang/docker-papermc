@@ -1,7 +1,7 @@
 version: "3.3"
 services:
-  paper-mc:
-    container_name: paper-mc
+  papermc:
+    container_name: papermc
     build: .
     ports:
       - 25565:25565
