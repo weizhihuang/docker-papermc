@@ -7,3 +7,5 @@ services:
       - 25565:25565
     volumes:
       - ./papermc-data:/usr/src/papermc
+    tty: true
+    stdin_open: true
