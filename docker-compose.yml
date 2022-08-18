@@ -1,0 +1,21 @@
+# docker-compose.yml
+# docker-compose up -d
+version: "3.3"
+services:
+  paper-mc:
+    container_name: paper-mc
+    build: .
+    ports:
+      - 25565:25565
+    volumes:
+      - ./papermc-data:/usr/src/papermc# docker-compose.yml
+# docker-compose up -d
+version: "3.3"
+services:
+  paper-mc:
+    container_name: paper-mc
+    build: .
+    ports:
+      - 25565:25565
+    volumes:
+      - ./papermc-data:/usr/src/papermc
