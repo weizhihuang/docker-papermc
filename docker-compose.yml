@@ -4,7 +4,7 @@ services:
     container_name: papermc
     build: .
     ports:
-      - 25565:25565
+      - "25565:25565"
     volumes:
       - ./papermc-data:/usr/src/papermc
     tty: true
